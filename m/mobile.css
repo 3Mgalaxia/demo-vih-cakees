@@ -1,0 +1,44 @@
+.mobile{--wrap:min(680px,calc(100% - 2rem));scroll-snap-type:y proximity;scroll-padding-top:4.75rem}
+.mobile main>section{scroll-snap-align:start;scroll-margin-top:0}
+.mobile .hero,.mobile .closing{scroll-snap-align:start;scroll-margin-top:-4.75rem}
+.mobile .site-head{top:max(.6rem,env(safe-area-inset-top))}
+.mobile .pill{min-height:58px;padding-left:1rem}
+.mobile .wordmark{display:inline-flex;align-items:center;gap:.19em;min-height:48px;font-size:1.55rem}
+.mobile .hero-stage{min-height:max(590px,100svh);align-items:end}
+.mobile .hero-art{background:radial-gradient(ellipse at 50% 30%,#633039 2%,#351920 42%,var(--chocolate) 76%)}
+.mobile .hero-art::after{background:linear-gradient(to bottom,transparent 32%,#170a0c38 49%,#170a0c 76%)}
+.mobile .hero-frame{inset:8% -9% 29% -9%;transform:translateY(var(--art-y,0px)) rotate(-10deg)}
+.mobile .hero-frame img{object-position:center 56%;filter:brightness(.92) saturate(.85);mask-image:radial-gradient(ellipse at 53% 49%,#000 31%,#000d 54%,transparent 73%)}
+.mobile .orbit{right:8%;top:11%;width:85%;max-width:560px}
+.mobile .orbit-inner{right:11%;top:14%;width:78%}
+.mobile .p1{--x:73%;--y:17%;--size:17%}.mobile .p2{--x:4%;--y:21%;--size:16%}
+.mobile .p3{--x:80%;--y:39%;--size:18%}.mobile .p4{--x:7%;--y:51%;--size:11%}
+.mobile .p5{--x:16%;--y:34%;--size:16%}.mobile .p6{--x:88%;--y:24%;--size:10%}
+.mobile .p7{--x:40%;--y:13%;--size:8%}.mobile .p8{--x:66%;--y:46%;--size:12%}
+.mobile .hero-copy{padding:17rem 0 calc(6.25rem + env(safe-area-inset-bottom));text-align:center}
+.mobile .hero-copy .kicker{justify-content:center}
+.mobile .hero h1{font-size:clamp(3.05rem,13.6vw,8.5rem);line-height:.86;margin:.66rem 0 .9rem}
+.mobile .hero-description{max-width:29ch;margin-inline:auto;margin-bottom:.1rem;font-size:.93rem}
+.mobile-discover{display:inline-flex;align-items:center;min-height:48px;color:var(--gold);font-weight:700;text-underline-offset:4px}
+.mobile .hero-bottom{justify-content:center;gap:1rem;bottom:calc(3.9rem + env(safe-area-inset-bottom));font-size:.67rem}
+.mobile .float-order{inset:auto 1rem max(.7rem,env(safe-area-inset-bottom));min-height:52px}
+.mobile .manifesto,.mobile .products,.mobile .order,.mobile .process,.mobile .faq{min-height:calc(100svh - 4.75rem)}
+.mobile .manifesto,.mobile .products,.mobile .order,.mobile .process,.mobile .faq{padding-block:3rem 6rem}
+.mobile h2{font-size:clamp(3rem,12vw,6.8rem)}
+.mobile .manifesto{align-content:center}
+.mobile .manifesto h2{max-width:10ch}
+.mobile .products{display:grid;align-content:center}
+.mobile .products .section-head{margin-bottom:.8rem}
+.mobile .products h2{font-size:clamp(2.6rem,10vw,6rem)}
+.mobile .carousel{width:calc(100% - max(1rem,(100% - 680px)/2));margin-left:max(1rem,(100% - 680px)/2);margin-right:0}
+.mobile .product{width:min(75vw,500px);height:clamp(260px,49svh,510px);box-shadow:none}
+.mobile .order,.mobile .faq,.mobile .process-grid{grid-template-columns:1fr;gap:1.25rem}
+.mobile .order-actions{display:grid;grid-template-columns:1fr 1fr}
+.mobile .order-actions .button{padding-inline:.45rem;font-size:.87rem}
+.mobile .process-visual{aspect-ratio:4/3}
+.mobile .process-cues{margin:0}
+.mobile .process-cues li{padding:.55rem 0}
+.mobile .closing h2{max-width:8ch;margin-inline:auto;font-size:clamp(3.7rem,13.6vw,8.5rem)}
+.mobile .footer{grid-template-columns:1fr 1fr;padding-bottom:calc(6rem + env(safe-area-inset-bottom))}
+.mobile .button:hover{box-shadow:none}
+@media(prefers-reduced-motion:reduce){.mobile{scroll-snap-type:none}}

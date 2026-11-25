@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta name="robots" content="noindex,nofollow"><link rel="icon" href="favicon.svg">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#170a0c">
+  <title>Vih Cakees | Bolos e brigadeiros em Odivelas</title>
+  <meta name="description" content="Bolo no pote, brigadeiros e bolos festivos em Odivelas, Lisboa. Monte sua caixa e peça um orçamento pelo Instagram da Vih Cakees.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Vih Cakees | Da colher à festa">
+  <meta property="og:description" content="Bolo no pote, brigadeiros e bolos festivos em Odivelas. Encomende pelo Instagram.">
+  <meta property="og:image" content="https://3mgalaxia.github.io/demo-vih-cakees/assets/cake.webp">
+  <link rel="alternate" media="only screen and (max-width: 820px)" href="m/">
+  <script>
+    (() => {
+      const params = new URLSearchParams(location.search);
+      const override = params.get('view');
+      let choice = override === 'desktop' || override === 'mobile' ? override : null;
+      try { if (choice) sessionStorage.setItem('vih-cinema-view', choice); choice ||= sessionStorage.getItem('vih-cinema-view'); } catch {}
+      const mobile = (matchMedia('(pointer: coarse)').matches && innerWidth <= 820) || /Android|iPhone|iPod|Mobile/i.test(navigator.userAgent);
+      if (choice === 'mobile' || (!choice && mobile)) location.replace('m/' + location.search + location.hash);
+    })();
+  </script>
+  <link rel="preload" as="image" href="assets/cake.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,800;0,900;1,800;1,900&family=DM+Sans:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script>try { if (!sessionStorage.getItem('vih-cinema-intro') && !location.hash) { document.documentElement.classList.add('show-intro'); setTimeout(() => document.documentElement.classList.remove('show-intro'), 2750); } } catch {}</script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script defer src="app.js"></script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Bakery","name":"Vih Cakees","description":"Bolo no pote, brigadeiros e bolos festivos.","sameAs":["https://www.instagram.com/vih_cakees/"],"address":{"@type":"PostalAddress","addressLocality":"Odivelas","addressRegion":"Lisboa","addressCountry":"PT"}}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#inicio" data-evt="skip_content">Pular para o conteúdo</a>
+  <div class="intro" aria-hidden="true"><span>Vih <i>Cakees</i></span><span data-loader-count>0%</span></div>
+  <div class="page-progress" aria-hidden="true"><span></span></div>
+  <header class="site-head">
+    <nav class="pill" aria-label="Navegação principal">
+      <a class="wordmark" href="#inicio" data-evt="nav_home">Vih <i>Cakees</i><b>.</b></a>
+      <div class="nav-links"><a href="#doces" data-evt="nav_products">Os doces</a><a href="#processo" data-evt="nav_process">Em detalhes</a><a href="#como-pedir" data-evt="nav_faq">Como pedir</a></div>
+      <a class="box-link" href="#caixa" data-evt="nav_box"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 8h16v12H4zM4 8l3-4h10l3 4M12 4v8"/></svg> Sua caixa <span data-box-count>0</span></a>
+    </nav>
+  </header>
+  <main id="inicio">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-stage">
+        <div class="hero-art" aria-hidden="true">
+          <div class="halo"></div><div class="orbit"></div><div class="orbit orbit-inner"></div>
+          <!-- TROCAR FOTO DO HERO: atualize também o preload, o Open Graph e os créditos. Vídeo opcional: acrescente video muted loop playsinline preload="none" e poster local. -->
+          <div class="hero-frame"><img src="assets/cake.webp" width="1000" height="1250" fetchpriority="high" alt=""></div>
+          <canvas class="particles"></canvas>
+          <!-- TROCAR RECORTES: oito WebP decorativos transparentes em /assets/piece-*.webp. -->
+          <div class="pieces">
+            <img class="p1" style="--depth:1.1" src="assets/piece-1.webp" width="180" height="180" alt=""><img class="p2" style="--depth:.7" src="assets/piece-2.webp" width="180" height="180" alt="">
+            <img class="p3" style="--depth:1.4" src="assets/piece-3.webp" width="180" height="180" alt=""><img class="p4" style="--depth:.55" src="assets/piece-4.webp" width="180" height="180" alt="">
+            <img class="p5" style="--depth:1.6" src="assets/piece-5.webp" width="180" height="180" alt=""><img class="p6" style="--depth:.8" src="assets/piece-6.webp" width="180" height="180" alt="">
+            <img class="p7" style="--depth:1.3" src="assets/piece-7.webp" width="180" height="180" alt=""><img class="p8" style="--depth:.9" src="assets/piece-8.webp" width="180" height="180" alt="">
+          </div>
+        </div>
+        <div class="hero-copy wrap">
+          <p class="kicker"><span></span> ODIVELAS · LISBOA</p>
+          <h1 id="hero-title"><span>Da colher</span><span>à <em>festa.</em></span></h1>
+          <p class="hero-description">Bolo no pote, brigadeiros e bolos festivos.<br>Escolha o seu e encomende pelo Instagram.</p>
+          <a class="button magnet" href="#caixa" data-evt="hero_order">Encomendar</a>
+        </div>
+        <div class="hero-bottom wrap"><a href="#manifesto" data-evt="hero_scroll"><span class="scroll-mark" aria-hidden="true"></span> Explore a página</a><span>Imagem ilustrativa</span><button type="button" class="motion-toggle" data-motion data-evt="toggle_motion" aria-pressed="false" hidden>Pausar animação</button></div>
+      </div>
+    </section>
+    <section class="manifesto wrap" id="manifesto" aria-labelledby="manifesto-title">
+      <span class="kicker"><span></span> DA COLHER À FESTA</span>
+      <h2 id="manifesto-title" data-split>Uma colherada muda o ritmo do dia.</h2>
+      <p>Para dividir a caixa de brigadeiros ou guardar o último pedaço de bolo para você.</p>
+    </section>
+    <section class="products" id="doces" aria-labelledby="products-title">
+      <div class="wrap section-head">
+        <div><p class="kicker"><span></span> OS DOCES</p><h2 id="products-title">Escolha o seu.</h2></div>
+        <div class="carousel-controls" aria-label="Controles do carrossel">
+          <button type="button" data-prev data-evt="carousel_prev" aria-label="Produto anterior" aria-controls="produtos-trilho">‹</button><button type="button" data-next data-evt="carousel_next" aria-label="Próximo produto" aria-controls="produtos-trilho">›</button>
+        </div>
+      </div>
+      <div class="carousel wrap" id="produtos-trilho" role="region" aria-roledescription="carrossel" aria-label="Produtos" tabindex="0">
+        <div class="track">
+          <!-- TROCAR FOTOS DO CATÁLOGO: img src é o fallback local, data-src aceita a foto aprovada. -->
+          <article class="product" role="group" aria-roledescription="slide" aria-label="1 de 3"><img src="assets/copos.webp" data-src="assets/copos.webp" width="720" height="750" loading="lazy" alt="Doces servidos em copinhos, imagem ilustrativa"><div><h3>Bolo no pote</h3><p>Uma sobremesa para comer de colher.</p><a href="#caixa" data-add="pote" data-evt="add_pote">Adicionar à caixa</a></div></article>
+          <article class="product" role="group" aria-roledescription="slide" aria-label="2 de 3"><img src="assets/brigadeiros.webp" data-src="assets/brigadeiros.webp" width="720" height="1079" loading="lazy" alt="Brigadeiros com confeitos, imagem ilustrativa"><div><h3>Brigadeiros</h3><p>Para servir, presentear ou dividir.</p><a href="#caixa" data-add="brigadeiros" data-evt="add_brigadeiros">Adicionar à caixa</a></div></article>
+          <article class="product" role="group" aria-roledescription="slide" aria-label="3 de 3"><img src="assets/cake.webp" data-src="assets/cake.webp" width="1000" height="1250" loading="lazy" alt="Bolo de chocolate com cobertura, imagem ilustrativa"><div><h3>Bolos festivos</h3><p>O bolo da sua próxima comemoração.</p><a href="#caixa" data-add="festa" data-evt="add_festa">Adicionar à caixa</a></div></article>
+        </div>
+      </div>
+      <div class="wrap carousel-footer"><div class="carousel-meter" aria-hidden="true"><span></span></div><span>Fotos ilustrativas</span></div>
+    </section>
+    <section class="order wrap" id="caixa" aria-labelledby="box-title">
+      <div><p class="kicker"><span></span> ENCOMENDAS</p><h2 id="box-title">Sua <em>caixa.</em></h2><p>Escolha os itens e as quantidades. Os preços e a disponibilidade são informados pelo Instagram.</p></div>
+      <div class="order-panel">
+        <div class="choices" data-choices></div>
+        <noscript><p>Envie os produtos e as quantidades diretamente pelo Instagram.</p></noscript>
+        <div class="order-summary"><strong>Resumo</strong><p data-summary aria-live="polite">Sua caixa está vazia.</p></div>
+        <label class="message-label" for="pedido-texto">Mensagem do pedido</label>
+        <textarea id="pedido-texto" data-message rows="4" readonly>Olá, Vih Cakees! Gostaria de saber mais sobre as encomendas.</textarea>
+        <div class="order-actions"><button type="button" class="button outline" data-copy data-evt="copy_order" hidden>Copiar mensagem</button><a class="button magnet" href="https://ig.me/m/vih_cakees" target="_blank" rel="noopener noreferrer" data-send data-evt="open_dm">Abrir DM</a></div>
+        <p class="order-help" data-copy-status role="status">Copie o texto e cole na conversa do Instagram.</p>
+      </div>
+    </section>
+    <section class="process" id="processo" aria-labelledby="process-title">
+      <div class="wrap process-grid">
+        <div class="process-visual">
+          <!-- TROCAR MÍDIA DO PROCESSO: use imagens reais em data-src. Este ensaio de referência não documenta a produção da marca. -->
+          <img class="process-fallback" src="assets/detalhe.webp" width="760" height="1013" alt="Doces de chocolate em um ensaio fotográfico ilustrativo" loading="lazy">
+          <canvas class="process-canvas" width="900" height="900" aria-hidden="true"></canvas>
+        </div>
+        <div class="process-copy"><p class="kicker"><span></span> ENSAIO ILUSTRATIVO</p><h2 id="process-title">De <em>perto.</em></h2>
+          <ol class="process-cues">
+            <li data-src="assets/detalhe.webp"><strong>Chocolate</strong><p>O cacau em primeiro plano.</p></li>
+            <li data-src="assets/brigadeiros.webp"><strong>Confeitos</strong><p>Texturas que mudam a cada detalhe.</p></li>
+            <li data-src="assets/cake.webp"><strong>Cobertura</strong><p>O acabamento no centro da cena.</p></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <!-- DEPOIMENTOS: inserir apenas avaliações autorizadas, e só então ativar o carrossel. -->
+    <section class="faq wrap" id="como-pedir" aria-labelledby="faq-title">
+      <div><p class="kicker"><span></span> ENCOMENDE PELO INSTAGRAM</p><h2 id="faq-title">Como pedir.</h2><ol class="steps"><li>Escolha os doces e as quantidades.</li><li>Copie o resumo e cole na DM.</li><li>Combine orçamento, disponibilidade e entrega.</li></ol></div>
+      <div class="accordion">
+        <details><summary data-evt="faq_price">Quanto custa?</summary><p>Os preços são sob consulta pelo Instagram.</p></details>
+        <details><summary data-evt="faq_delivery">Tem delivery?</summary><p>Em Odivelas, há delivery pelo Bolt Food e pela Glovo. Confira a disponibilidade pelo app. <a href="https://glovo.go.link/open?link_type=store&amp;store_id=596358&amp;adjust_t=s321jkn" data-evt="faq_glovo" target="_blank" rel="noopener noreferrer">Ver loja na Glovo</a>.</p></details>
+        <details><summary data-evt="faq_location">Onde fica a Vih Cakees?</summary><p>Em Odivelas, Lisboa, Portugal. Consulte os detalhes de entrega e o horário na DM.</p></details>
+      </div>
+    </section>
+    <section class="closing" aria-labelledby="closing-title"><div class="wrap"><p class="kicker"><span></span> VIH CAKEES · ODIVELAS</p><h2 id="closing-title">Qual vai<br>ser <em>o seu?</em></h2><a class="button magnet" href="#caixa" data-evt="closing_order">Encomendar</a></div></section>
+  </main>
+  <footer class="footer wrap">
+    <a class="wordmark" href="#inicio" data-evt="footer_home">Vih <i>Cakees</i><b>.</b></a>
+    <div><strong>Odivelas, Lisboa</strong><p>Horário sob consulta.</p></div>
+    <div><a href="https://www.openstreetmap.org/search?query=Odivelas%2C%20Lisboa" data-evt="footer_map">Mapa de Odivelas</a><a href="https://www.instagram.com/vih_cakees/" data-evt="footer_instagram">@vih_cakees</a></div>
+    <div><a href="m/?view=mobile" data-evt="switch_mobile">Ver versão móvel</a><a href="creditos.html" data-evt="media_credits">Créditos de mídia</a></div>
+  <p class="wrap demo-note">Demonstração não oficial · Fotografias ilustrativas</p></footer>
+  <a class="float-order button" href="#caixa" data-evt="floating_order">Encomendar</a>
+  <div class="drag-cursor" aria-hidden="true">Arrastar</div>
+</body>
+</html>
